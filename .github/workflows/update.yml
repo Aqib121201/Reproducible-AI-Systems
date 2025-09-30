@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          persist-credentials: false   # do not use the default GITHUB_TOKEN
+          persist-credentials: false
 
       - name: Run fetch script
         run: node fetch-discussions.js
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}   # same PAT you added
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Commit and push changes with PAT
         env:
@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add README.md
+          git add README.md cases/
           git diff --cached --quiet && echo "No changes" || git commit -m "Update discussions"
           git push https://x-access-token:${GH_TOKEN}@github.com/Aqib121201/Reproducible-AI-Systems.git HEAD:main
