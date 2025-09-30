@@ -1,11 +1,10 @@
-import { request, gql } from "graphql-request";
-import fs from "fs";
+const fs = require("fs");
 
 const endpoint = "https://api.github.com/graphql";
 const token = process.env.GH_TOKEN;
 
-const query = gql`
-{
+const query = `
+query {
   user(login: "Aqib121201") {
     discussionComments(first: 50, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
@@ -15,9 +14,7 @@ const query = gql`
         isAnswer
         discussion {
           title
-          repository {
-            nameWithOwner
-          }
+          repository { nameWithOwner }
         }
       }
     }
@@ -25,37 +22,67 @@ const query = gql`
 }
 `;
 
+async function ghRequest(query) {
+  const res = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${token}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ query })
+  });
+  if (!res.ok) {
+    const txt = await res.text();
+    throw new Error(`GitHub API error ${res.status}: ${txt}`);
+  }
+  const json = await res.json();
+  if (json.errors) throw new Error(`GraphQL errors: ${JSON.stringify(json.errors)}`);
+  return json.data;
+}
+
 async function main() {
-  const headers = { Authorization: `Bearer ${token}` };
-  const data = await request(endpoint, query, {}, headers);
+  if (!token) throw new Error("Missing GH_TOKEN env");
+
+  const data = await ghRequest(query);
+  const nodes = (data.user?.discussionComments?.nodes || []).filter(n => n.isAnswer);
 
   let md = `# Reproducible AI Systems
 
-Curated accepted answers from GitHub Discussions, transformed into reproducible case studies.  
-Each entry contains the original discussion link, my solution excerpt, and reproducibility placeholders.  
-This aligns with EU Open Science standards of transparency and validation.
+Curated accepted answers from GitHub Discussions, transformed into reproducible case studies.
+Each entry includes the original discussion link, a solution excerpt, and placeholders for validation and reproducibility.
 
 ---
 
 `;
 
   let count = 0;
-  data.user.discussionComments.nodes
-    .filter(c => c.isAnswer)
-    .forEach((c) => {
-      count++;
-      md += `## Case Study ${count}: ${c.discussion.title}\n`;
-      md += `**Repository:** ${c.discussion.repository.nameWithOwner}\n\n`;
-      md += `**Original Discussion:** [View here](${c.url})\n\n`;
-      md += `**Answer Excerpt:**\n${c.body.substring(0, 400)}...\n\n`;
-      md += `**Validation:**\nSteps to confirm this solution works (to be expanded).\n\n`;
-      md += `**Reproducibility Notes:**\nEnvironment assumptions, scripts, or datasets needed (to be added).\n\n`;
-      md += "---\n\n";
-    });
+  for (const c of nodes) {
+    count++;
+    const excerpt = c.body.replace(/\r?\n+/g, " ").slice(0, 400);
+    md += `## Case Study ${count}: ${c.discussion.title}
+**Repository:** ${c.discussion.repository.nameWithOwner}
+
+**Original Discussion:** [View here](${c.url})
+
+**Answer Excerpt:**
+${excerpt}...
+
+**Validation:**
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+`;
+  }
 
   md += `\n_Total curated answers: ${count}_\n`;
-
   fs.writeFileSync("README.md", md);
 }
 
-main().catch(err => console.error(err));
+main().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
