@@ -1,20 +1,24 @@
+
 const fs = require("fs");
 
 const endpoint = "https://api.github.com/graphql";
 const token = process.env.GH_TOKEN;
+const username = "Aqib121201"; // <-- change if needed
 
 const query = `
-query {
-  user(login: "Aqib121201") {
-    discussionComments(first: 50, orderBy: {field: UPDATED_AT, direction: DESC}) {
-      nodes {
+query($q: String!) {
+  search(type: DISCUSSION, query: $q, first: 50) {
+    discussionCount
+    nodes {
+      ... on Discussion {
+        title
         url
-        body
-        createdAt
-        isAnswer
-        discussion {
-          title
-          repository { nameWithOwner }
+        repository { nameWithOwner }
+        answer {
+          author { login }
+          body
+          url
+          createdAt
         }
       }
     }
@@ -22,29 +26,35 @@ query {
 }
 `;
 
-async function ghRequest(query) {
+async function ghRequest(query, variables) {
   const res = await fetch(endpoint, {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${token}`,
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ query })
+    body: JSON.stringify({ query, variables })
   });
   if (!res.ok) {
     const txt = await res.text();
-    throw new Error(`GitHub API error ${res.status}: ${txt}`);
+    throw new Error(`GitHub API ${res.status}: ${txt}`);
   }
   const json = await res.json();
   if (json.errors) throw new Error(`GraphQL errors: ${JSON.stringify(json.errors)}`);
   return json.data;
 }
 
+function oneLine(s) {
+  return s.replace(/\r?\n+/g, " ").trim();
+}
+
 async function main() {
   if (!token) throw new Error("Missing GH_TOKEN env");
+  const searchQuery = `is:discussion answered-by:${username}`;
 
-  const data = await ghRequest(query);
-  const nodes = (data.user?.discussionComments?.nodes || []).filter(n => n.isAnswer);
+  const data = await ghRequest(query, { q: searchQuery });
+  const discussions = (data.search?.nodes || [])
+    .filter(n => n.answer && n.answer.author && n.answer.author.login.toLowerCase() === username.toLowerCase());
 
   let md = `# Reproducible AI Systems
 
@@ -55,14 +65,15 @@ Each entry includes the original discussion link, a solution excerpt, and placeh
 
 `;
 
-  let count = 0;
-  for (const c of nodes) {
-    count++;
-    const excerpt = c.body.replace(/\r?\n+/g, " ").slice(0, 400);
-    md += `## Case Study ${count}: ${c.discussion.title}
-**Repository:** ${c.discussion.repository.nameWithOwner}
+  let i = 0;
+  for (const d of discussions) {
+    i++;
+    const excerpt = oneLine(d.answer.body).slice(0, 400);
+    md += `## Case Study ${i}: ${d.title}
+**Repository:** ${d.repository.nameWithOwner}
 
-**Original Discussion:** [View here](${c.url})
+**Original Discussion:** [View discussion](${d.url})
+**Accepted Answer:** [Direct link](${d.answer.url})
 
 **Answer Excerpt:**
 ${excerpt}...
@@ -78,11 +89,8 @@ Environment assumptions, scripts, or datasets needed.
 `;
   }
 
-  md += `\n_Total curated answers: ${count}_\n`;
+  md += `\n_Total curated accepted answers: ${i}_\n`;
   fs.writeFileSync("README.md", md);
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+main().catch(err => { console.error(err); process.exit(1); });
