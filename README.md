@@ -1,4 +1,5 @@
 # Reproducible AI Systems
+![Update Discussions](https://github.com/Aqib121201/Reproducible-AI-Systems/actions/workflows/update.yml/badge.svg)
 
 Curated accepted answers from GitHub Discussions, transformed into reproducible case studies.  
 Each entry includes the original discussion link, a solution excerpt, and reproducibility placeholders.  
