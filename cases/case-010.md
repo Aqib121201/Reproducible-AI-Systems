@@ -8,21 +8,17 @@
 ---
 
 ## Problem
-Brief restatement of the issue from the discussion.
+State the minimal reproducible problem in one paragraph.
 
 ## Solution I provided
-Right now Copilot does not let you assign different models to different custom modes. The model selection is global for your whole Copilot session so when you switch it for one mode it applies everywhere. Roo Code has that flexibility but Copilot does not support it yet. At the moment the only option is to manually change the model when you switch modes.
-If you find this solution helpful upvote this and please follow me it boosts my confidence
-
+Right now Copilot does not let you assign different models to different custom modes. The model selection is global for your whole Copilot session so when you switch it for one mode it applies everywhere. Roo Code has that flexibility but Copilot does not support it yet. At the moment the only option is to manually change the model when you switch modes. If you find this solution helpful upvote this and please follow me it boosts my confidence
 
 ## Validation
-Steps to confirm resolution. Include commands and expected outputs.
+Commands to run and expected output.
 
 ## Reproducibility Notes
-OS and versions  
-Dependencies and tokens  
-Edge cases and rollback
+OS and versions · Dependencies · Edge cases and rollback
 
 ## Evidence
-Paste console logs or screenshots in `evidence/` and link them here.
+Attach logs/screenshots under `evidence/` and link here.
 

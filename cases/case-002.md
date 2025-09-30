@@ -8,24 +8,17 @@
 ---
 
 ## Problem
-Brief restatement of the issue from the discussion.
+State the minimal reproducible problem in one paragraph.
 
 ## Solution I provided
-Secret scanning scan history returns the machine-readable identifier of the pattern, which is `pattern_slug`. That is what you will see in the API response.
-
-The docs sometimes show `pattern_name` in examples for readability, but the actual response object includes the slug. You can map slugs back to human-friendly names using the patterns API if you need to display them.
-
-If this solved your issue please mark the answer as helpful so others can find it.
-
+Secret scanning scan history returns the machine-readable identifier of the pattern, which is `pattern_slug`. That is what you will see in the API response. The docs sometimes show `pattern_name` in examples for readability, but the actual response object includes the slug. You can map slugs back to human-friendly names using the patterns API if you need to display them. If this solved your issue please mark the answer as helpful so others can find it.
 
 ## Validation
-Steps to confirm resolution. Include commands and expected outputs.
+Commands to run and expected output.
 
 ## Reproducibility Notes
-OS and versions  
-Dependencies and tokens  
-Edge cases and rollback
+OS and versions · Dependencies · Edge cases and rollback
 
 ## Evidence
-Paste console logs or screenshots in `evidence/` and link them here.
+Attach logs/screenshots under `evidence/` and link here.
 
