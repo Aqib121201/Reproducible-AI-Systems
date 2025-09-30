@@ -1,0 +1,32 @@
+name: Update Discussions
+on:
+  schedule:
+    - cron: "0 6 * * *"   # runs daily at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-discussions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install deps
+        run: npm install graphql-request
+
+      - name: Run fetch script
+        run: node fetch-discussions.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update discussions"
+          git push
