@@ -6,7 +6,41 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: Dependency graph
+## Case Study 1: Signing macos apps in a GitHub action for test runs only
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175498)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175498#discussioncomment-14568956)
+
+**Answer Excerpt:**  
+The simplest way to get macOS unit tests running on the hosted runner is to avoid signing entirely for the test build. For unit tests you can tell Xcode not to sign and not to look for a provisioning profile. This works because code signing is only required when you need to run a signed app bundle or distribute it. Most unit test bundles can compile and run without a signing identity on CI.  Try t...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: quota management is obscure to me
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175265)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175265#discussioncomment-14553484)
+
+**Answer Excerpt:**  
+The most likely explanation is that the 300 premium requests are tied to a fixed monthly quota window, not to your billing date. The “month” in the error message means a rolling usage window that resets on the first day of the calendar month (UTC), regardless of when you were billed. That is why you saw the message immediately after being charged and why waiting for your billing anniversary did no...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 3: Dependency graph
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175401)  
@@ -23,7 +57,24 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: NextJS, search form page, results page
+## Case Study 4: How to enable SSH access for an AlmaLinux 9 devcontainer?
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
+
+**Answer Excerpt:**  
+@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 5: NextJS, search form page, results page
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175326)  
@@ -40,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 3: Why did I get a GitHub Spark access email if it’s still rolling out?
+## Case Study 6: Why did I get a GitHub Spark access email if it’s still rolling out?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175153)  
@@ -57,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: what does secret scanning scan history return?
+## Case Study 7: what does secret scanning scan history return?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175077)  
@@ -74,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: Why copilot chat in Linux doesn't have option to change model?
+## Case Study 8: Why copilot chat in Linux doesn't have option to change model?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175031)  
@@ -91,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
+## Case Study 9: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174911)  
@@ -108,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: manual workflow in features brach
+## Case Study 10: manual workflow in features brach
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174939)  
@@ -125,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Date and time format
+## Case Study 11: Date and time format
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174591)  
@@ -142,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: GitHub Copilot Usage Externally
+## Case Study 12: GitHub Copilot Usage Externally
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174484)  
@@ -159,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: Github Action on PR merged and Environment question
+## Case Study 13: Github Action on PR merged and Environment question
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174474)  
@@ -176,7 +227,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: Agentes de IA com Python
+## Case Study 14: Agentes de IA com Python
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174123)  
@@ -193,7 +244,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: Can't set different model per mode
+## Case Study 15: Can't set different model per mode
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174282)  
@@ -210,7 +261,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 13: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
+## Case Study 16: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174203)  
@@ -227,7 +278,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 14: not receiving PR review requested notifications and cant find location to enable it
+## Case Study 17: not receiving PR review requested notifications and cant find location to enable it
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173820)  
@@ -244,7 +295,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 15: Audit logs for certain actions show Unknown IP address
+## Case Study 18: Audit logs for certain actions show Unknown IP address
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173723)  
@@ -262,4 +313,4 @@ Environment assumptions, scripts, or datasets needed.
 ---
 
 
-_Total curated accepted answers: 15_
+_Total curated accepted answers: 18_
