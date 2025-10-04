@@ -6,7 +6,41 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: Signing macos apps in a GitHub action for test runs only
+## Case Study 1: Can’t figure out why my API won’t accept orders
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175554)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175554#discussioncomment-14574303)
+
+**Answer Excerpt:**  
+The most likely fix is that your key does not have write scopes for orders even though it works for reads. Many commerce APIs allow reads with a basic key but require a separate secret or a key with explicit write permissions for order creation. Create a new credential with write access to orders and inventory in the provider dashboard, rotate it into your app, and restart the process. This resolv...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: Why does search not find this repo?
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175430)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175430#discussioncomment-14569004)
+
+**Answer Excerpt:**  
+GitHub’s search does not surface every fork by default. When a repository is a fork, the search index usually treats the original repository as canonical. That means if you search for the name you will normally see the root project, not each fork. If the parent repo has since been archived or is no longer available, the fork still exists but may not appear in the global search results because fork...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 3: Signing macos apps in a GitHub action for test runs only
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175498)  
@@ -23,7 +57,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: quota management is obscure to me
+## Case Study 4: quota management is obscure to me
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175265)  
@@ -40,7 +74,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 3: Dependency graph
+## Case Study 5: Dependency graph
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175401)  
@@ -57,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: How to enable SSH access for an AlmaLinux 9 devcontainer?
+## Case Study 6: How to enable SSH access for an AlmaLinux 9 devcontainer?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
@@ -74,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: NextJS, search form page, results page
+## Case Study 7: NextJS, search form page, results page
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175326)  
@@ -91,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: Why did I get a GitHub Spark access email if it’s still rolling out?
+## Case Study 8: Why did I get a GitHub Spark access email if it’s still rolling out?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175153)  
@@ -108,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: what does secret scanning scan history return?
+## Case Study 9: what does secret scanning scan history return?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175077)  
@@ -125,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Why copilot chat in Linux doesn't have option to change model?
+## Case Study 10: Why copilot chat in Linux doesn't have option to change model?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175031)  
@@ -142,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
+## Case Study 11: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174911)  
@@ -159,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: manual workflow in features brach
+## Case Study 12: manual workflow in features brach
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174939)  
@@ -176,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: Date and time format
+## Case Study 13: Date and time format
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174591)  
@@ -193,7 +227,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: GitHub Copilot Usage Externally
+## Case Study 14: GitHub Copilot Usage Externally
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174484)  
@@ -210,7 +244,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 13: Github Action on PR merged and Environment question
+## Case Study 15: Github Action on PR merged and Environment question
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174474)  
@@ -227,7 +261,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 14: Agentes de IA com Python
+## Case Study 16: Agentes de IA com Python
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174123)  
@@ -244,7 +278,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 15: Can't set different model per mode
+## Case Study 17: Can't set different model per mode
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174282)  
@@ -261,7 +295,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 16: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
+## Case Study 18: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174203)  
@@ -278,7 +312,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 17: not receiving PR review requested notifications and cant find location to enable it
+## Case Study 19: not receiving PR review requested notifications and cant find location to enable it
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173820)  
@@ -295,7 +329,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 18: Audit logs for certain actions show Unknown IP address
+## Case Study 20: Audit logs for certain actions show Unknown IP address
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173723)  
@@ -313,4 +347,4 @@ Environment assumptions, scripts, or datasets needed.
 ---
 
 
-_Total curated accepted answers: 18_
+_Total curated accepted answers: 20_
