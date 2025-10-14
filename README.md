@@ -6,41 +6,7 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: About git.hubp.de
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175897#discussioncomment-14601807)
-
-**Answer Excerpt:**  
-That site is not part of GitHub. The only official GitHub domains are github.com and subdomains ending in githubusercontent.com or github.dev. The address git.hubp.de is unrelated and likely a third-party mirror or imitation site. It is safest to assume it is not authorized to host your content.  To confirm, check the SSL certificate and whois record of the domain. You will see it is not owned by ...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 2: Paymeny declined
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175858)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175858#discussioncomment-14597035)
-
-**Answer Excerpt:**  
-The most reliable next step is to remove the saved payment method from your GitHub billing settings and re-add it using a different browser or a private window. This bypasses cached payment data that can cause processor rejections even when the card is valid. It also ensures that 3D Secure verification can complete if your bank requires it.  After you re-add the card, try a small manual charge by ...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 3: I am having a very hard time understanding things. Someone please point me in the right direction.
+## Case Study 1: I am having a very hard time understanding things. Someone please point me in the right direction.
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175680)  
@@ -57,7 +23,58 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: Fork Missing in Tree View of Fork Insights Tab
+## Case Study 2: TLS certificate is being provisioned. This may take up to 15 minutes to complete.
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176744)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/176744#discussioncomment-14671257)
+
+**Answer Excerpt:**  
+This message usually means GitHub Pages has detected your custom domain but has not yet been able to verify it through DNS for SSL provisioning. Even if your A and CNAME records look correct, the DNS changes might not have fully propagated through the global network.  You can confirm the setup by running `dig yourdomain.com` and `dig www.yourdomain.com` from a terminal. Both should return GitHub’s...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 3: About git.hubp.de
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175897#discussioncomment-14601807)
+
+**Answer Excerpt:**  
+That site is not part of GitHub. The only official GitHub domains are github.com and subdomains ending in githubusercontent.com or github.dev. The address git.hubp.de is unrelated and likely a third-party mirror or imitation site. It is safest to assume it is not authorized to host your content.  To confirm, check the SSL certificate and whois record of the domain. You will see it is not owned by ...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 4: Paymeny declined
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175858)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175858#discussioncomment-14597035)
+
+**Answer Excerpt:**  
+The most reliable next step is to remove the saved payment method from your GitHub billing settings and re-add it using a different browser or a private window. This bypasses cached payment data that can cause processor rejections even when the card is valid. It also ensures that 3D Secure verification can complete if your bank requires it.  After you re-add the card, try a small manual charge by ...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 5: Fork Missing in Tree View of Fork Insights Tab
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175749)  
@@ -74,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: AGENTS.md is not considering by default when I start a new chat
+## Case Study 6: AGENTS.md is not considering by default when I start a new chat
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175649)  
@@ -91,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: Can’t figure out why my API won’t accept orders
+## Case Study 7: Can’t figure out why my API won’t accept orders
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175554)  
@@ -108,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: Why does search not find this repo?
+## Case Study 8: Why does search not find this repo?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175430)  
@@ -125,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Signing macos apps in a GitHub action for test runs only
+## Case Study 9: Signing macos apps in a GitHub action for test runs only
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175498)  
@@ -142,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: quota management is obscure to me
+## Case Study 10: quota management is obscure to me
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175265)  
@@ -159,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: Dependency graph
+## Case Study 11: Dependency graph
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175401)  
@@ -176,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: How to enable SSH access for an AlmaLinux 9 devcontainer?
+## Case Study 12: How to enable SSH access for an AlmaLinux 9 devcontainer?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
@@ -193,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: NextJS, search form page, results page
+## Case Study 13: NextJS, search form page, results page
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175326)  
@@ -210,7 +227,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 13: Why did I get a GitHub Spark access email if it’s still rolling out?
+## Case Study 14: Why did I get a GitHub Spark access email if it’s still rolling out?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175153)  
@@ -227,7 +244,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 14: what does secret scanning scan history return?
+## Case Study 15: what does secret scanning scan history return?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175077)  
@@ -244,7 +261,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 15: Why copilot chat in Linux doesn't have option to change model?
+## Case Study 16: Why copilot chat in Linux doesn't have option to change model?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175031)  
@@ -261,7 +278,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 16: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
+## Case Study 17: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174911)  
@@ -278,7 +295,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 17: manual workflow in features brach
+## Case Study 18: manual workflow in features brach
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174939)  
@@ -295,7 +312,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 18: Date and time format
+## Case Study 19: Date and time format
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174591)  
@@ -312,7 +329,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 19: GitHub Copilot Usage Externally
+## Case Study 20: GitHub Copilot Usage Externally
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174484)  
@@ -329,7 +346,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 20: Github Action on PR merged and Environment question
+## Case Study 21: Github Action on PR merged and Environment question
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174474)  
@@ -346,7 +363,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 21: Agentes de IA com Python
+## Case Study 22: Agentes de IA com Python
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174123)  
@@ -363,7 +380,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 22: Can't set different model per mode
+## Case Study 23: Can't set different model per mode
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174282)  
@@ -380,7 +397,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 23: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
+## Case Study 24: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174203)  
@@ -397,7 +414,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 24: not receiving PR review requested notifications and cant find location to enable it
+## Case Study 25: not receiving PR review requested notifications and cant find location to enable it
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173820)  
@@ -414,7 +431,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 25: Audit logs for certain actions show Unknown IP address
+## Case Study 26: Audit logs for certain actions show Unknown IP address
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173723)  
@@ -432,4 +449,4 @@ Environment assumptions, scripts, or datasets needed.
 ---
 
 
-_Total curated accepted answers: 25_
+_Total curated accepted answers: 26_
