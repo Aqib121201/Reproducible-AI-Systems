@@ -6,7 +6,24 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
+## Case Study 1: About git.hubp.de
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175897#discussioncomment-14601807)
+
+**Answer Excerpt:**  
+That site is not part of GitHub. The only official GitHub domains are github.com and subdomains ending in githubusercontent.com or github.dev. The address git.hubp.de is unrelated and likely a third-party mirror or imitation site. It is safest to assume it is not authorized to host your content.  To confirm, check the SSL certificate and whois record of the domain. You will see it is not owned by ...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179851)  
@@ -23,7 +40,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: How to resolve the issue of the release page displaying incorrectly?
+## Case Study 3: How to resolve the issue of the release page displaying incorrectly?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
@@ -40,7 +57,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 3: Is there a way to ignore "[skip ci]" for tag pushes?
+## Case Study 4: Is there a way to ignore "[skip ci]" for tag pushes?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179637)  
@@ -57,7 +74,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: Out of space error while pulling docker layers since yesterday
+## Case Study 5: Out of space error while pulling docker layers since yesterday
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179725)  
@@ -74,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: Redirect to a App Connection on my profile, side menu accessility indication
+## Case Study 6: Redirect to a App Connection on my profile, side menu accessility indication
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179602)  
@@ -91,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: Searching organization repositories based on Custom Property using GitHub App installation token
+## Case Study 7: Searching organization repositories based on Custom Property using GitHub App installation token
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179512)  
@@ -108,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: Can a user set MCP registry url in VS Code
+## Case Study 8: Can a user set MCP registry url in VS Code
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179377)  
@@ -125,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Break glass accounts for Enterprise vs Organization
+## Case Study 9: Break glass accounts for Enterprise vs Organization
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179445)  
@@ -142,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
+## Case Study 10: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179481)  
@@ -159,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
+## Case Study 11: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179376)  
@@ -176,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: Cant Access settings
+## Case Study 12: Cant Access settings
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179083)  
@@ -193,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: It seems that there is an image upload limit for a single conversation in copilot
+## Case Study 13: It seems that there is an image upload limit for a single conversation in copilot
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179404)  
@@ -210,7 +227,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 13: How to organize multiple projects within an Organization on GitHub?
+## Case Study 14: How to organize multiple projects within an Organization on GitHub?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179050)  
@@ -227,7 +244,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 14: How to conditionally run steps in a workflow based on the value of an environment variable set
+## Case Study 15: How to conditionally run steps in a workflow based on the value of an environment variable set
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179271)  
@@ -244,7 +261,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 15: Releases is duplicated
+## Case Study 16: Releases is duplicated
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179273)  
@@ -261,7 +278,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 16: Best practices for migrating from SVN to GitHub
+## Case Study 17: Best practices for migrating from SVN to GitHub
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179231)  
@@ -278,7 +295,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 17: How to use 2FA without signing up for an online account?
+## Case Study 18: How to use 2FA without signing up for an online account?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179118)  
@@ -295,7 +312,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 18: Can an input parameter be used for an automatic deployment?
+## Case Study 19: Can an input parameter be used for an automatic deployment?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179119)  
@@ -312,7 +329,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 19: iPad full screen support
+## Case Study 20: iPad full screen support
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179097)  
@@ -329,7 +346,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 20: project idea question_mind map file manager
+## Case Study 21: project idea question_mind map file manager
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178721)  
@@ -346,7 +363,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 21: Copilot issues
+## Case Study 22: Copilot issues
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178850)  
@@ -363,7 +380,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 22: core.debug fails silently
+## Case Study 23: core.debug fails silently
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178475)  
@@ -380,7 +397,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 23: Please simplify generation of granular tokens
+## Case Study 24: Please simplify generation of granular tokens
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178653)  
@@ -397,7 +414,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 24: How to find my history of forked repo
+## Case Study 25: How to find my history of forked repo
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177599)  
@@ -414,7 +431,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 25: Hosting
+## Case Study 26: Hosting
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177265)  
@@ -431,7 +448,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 26: NextJS, failed to fetch ' Open Sans' from Google Fonts on build
+## Case Study 27: NextJS, failed to fetch ' Open Sans' from Google Fonts on build
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177046)  
@@ -448,7 +465,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 27: Workflow matrix with extra data
+## Case Study 28: Workflow matrix with extra data
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177251)  
@@ -465,7 +482,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 28: Pages from Private repo if student status expires?
+## Case Study 29: Pages from Private repo if student status expires?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177270)  
@@ -482,7 +499,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 29: Architectural Discussion: Best way to cap file upload sizes in Go to prevent OOM/DoS?
+## Case Study 30: Architectural Discussion: Best way to cap file upload sizes in Go to prevent OOM/DoS?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177001)  
@@ -499,7 +516,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 30: Flutter Project Build Issue
+## Case Study 31: Flutter Project Build Issue
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176745)  
@@ -516,7 +533,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 31: Prevent actions on forks
+## Case Study 32: Prevent actions on forks
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176925)  
@@ -533,7 +550,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 32: What it means that a AI model is in a preview?
+## Case Study 33: What it means that a AI model is in a preview?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177077)  
@@ -550,7 +567,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 33: I am having a very hard time understanding things. Someone please point me in the right direction.
+## Case Study 34: I am having a very hard time understanding things. Someone please point me in the right direction.
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175680)  
@@ -567,7 +584,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 34: Not Able to Get in my HacktoberFest Account
+## Case Study 35: Not Able to Get in my HacktoberFest Account
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176827)  
@@ -584,7 +601,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 35: TLS certificate is being provisioned. This may take up to 15 minutes to complete.
+## Case Study 36: TLS certificate is being provisioned. This may take up to 15 minutes to complete.
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176744)  
@@ -592,23 +609,6 @@ Environment assumptions, scripts, or datasets needed.
 
 **Answer Excerpt:**  
 This message usually means GitHub Pages has detected your custom domain but has not yet been able to verify it through DNS for SSL provisioning. Even if your A and CNAME records look correct, the DNS changes might not have fully propagated through the global network.  You can confirm the setup by running `dig yourdomain.com` and `dig www.yourdomain.com` from a terminal. Both should return GitHub’s...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 36: About git.hubp.de
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175897#discussioncomment-14601807)
-
-**Answer Excerpt:**  
-That site is not part of GitHub. The only official GitHub domains are github.com and subdomains ending in githubusercontent.com or github.dev. The address git.hubp.de is unrelated and likely a third-party mirror or imitation site. It is safest to assume it is not authorized to host your content.  To confirm, check the SSL certificate and whois record of the domain. You will see it is not owned by ...
 
 **Validation:**  
 Steps to confirm this solution works.
