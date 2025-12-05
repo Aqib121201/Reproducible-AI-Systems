@@ -6,7 +6,24 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: About git.hubp.de
+## Case Study 1: How to resolve the issue of the release page displaying incorrectly?
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
+
+**Answer Excerpt:**  
+That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: About git.hubp.de
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
@@ -23,7 +40,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
+## Case Study 3: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179851)  
@@ -31,23 +48,6 @@ Environment assumptions, scripts, or datasets needed.
 
 **Answer Excerpt:**  
 Your TOML 404s because GitHub Pages is running Jekyll and Jekyll ignores dot foldersJust add a file called .nojekyll in the root of your repo and pushThis makes Pages serve .well-known normallyAfter that your TOML should load fine...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 3: How to resolve the issue of the release page displaying incorrectly?
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
-
-**Answer Excerpt:**  
-That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
 
 **Validation:**  
 Steps to confirm this solution works.
