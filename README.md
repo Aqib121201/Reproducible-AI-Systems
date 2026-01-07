@@ -6,7 +6,24 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: Flutter Project Build Issue
+## Case Study 1: Cant Access settings
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179083)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179083#discussioncomment-14904015)
+
+**Answer Excerpt:**  
+You’re seeing 404 because your collaborator role isn’t Admin. Only Admins can open repo settings. Ask the repo owner to change your access to Admin under Settings click Collaborators, then refresh and try again....
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: Flutter Project Build Issue
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176745)  
@@ -23,7 +40,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: How to resolve the issue of the release page displaying incorrectly?
+## Case Study 3: How to resolve the issue of the release page displaying incorrectly?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
@@ -40,7 +57,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 3: About git.hubp.de
+## Case Study 4: About git.hubp.de
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
@@ -57,7 +74,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
+## Case Study 5: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179851)  
@@ -74,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: Is there a way to ignore "[skip ci]" for tag pushes?
+## Case Study 6: Is there a way to ignore "[skip ci]" for tag pushes?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179637)  
@@ -91,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: Out of space error while pulling docker layers since yesterday
+## Case Study 7: Out of space error while pulling docker layers since yesterday
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179725)  
@@ -108,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: Redirect to a App Connection on my profile, side menu accessility indication
+## Case Study 8: Redirect to a App Connection on my profile, side menu accessility indication
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179602)  
@@ -125,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Searching organization repositories based on Custom Property using GitHub App installation token
+## Case Study 9: Searching organization repositories based on Custom Property using GitHub App installation token
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179512)  
@@ -142,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: Can a user set MCP registry url in VS Code
+## Case Study 10: Can a user set MCP registry url in VS Code
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179377)  
@@ -159,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: Break glass accounts for Enterprise vs Organization
+## Case Study 11: Break glass accounts for Enterprise vs Organization
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179445)  
@@ -176,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
+## Case Study 12: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179481)  
@@ -193,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
+## Case Study 13: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179376)  
@@ -201,23 +218,6 @@ Environment assumptions, scripts, or datasets needed.
 
 **Answer Excerpt:**  
 yeah true that’s the limitation with workflow_run right now a better workaround is to add a tiny notifier step at the end of each required check that triggers a repo_dispatch or webhook that way you don’t need to list workflows manually and it scales across all repos easily...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 13: Cant Access settings
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179083)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179083#discussioncomment-14904015)
-
-**Answer Excerpt:**  
-You’re seeing 404 because your collaborator role isn’t Admin. Only Admins can open repo settings. Ask the repo owner to change your access to Admin under Settings click Collaborators, then refresh and try again....
 
 **Validation:**  
 Steps to confirm this solution works.
