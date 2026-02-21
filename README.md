@@ -6,7 +6,24 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: Cant Access settings
+## Case Study 1: How to resolve the issue of the release page displaying incorrectly?
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
+
+**Answer Excerpt:**  
+That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: Cant Access settings
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179083)  
@@ -23,7 +40,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: Flutter Project Build Issue
+## Case Study 3: Flutter Project Build Issue
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176745)  
@@ -31,23 +48,6 @@ Environment assumptions, scripts, or datasets needed.
 
 **Answer Excerpt:**  
 The most likely fix is that the simulator build is still using Xcode 9.3 under the hood even if you installed newer tools. That produces pods compiled against the wrong SDK and the compiler cannot find the `cloud_firestore` module. Point the command line tools to the current Xcode, clear DerivedData and pods, then rebuild so everything targets the iOS 18 simulator SDK.  Open a terminal and run thi...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 3: How to resolve the issue of the release page displaying incorrectly?
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
-
-**Answer Excerpt:**  
-That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
 
 **Validation:**  
 Steps to confirm this solution works.
