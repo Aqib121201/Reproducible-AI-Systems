@@ -6,7 +6,24 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: How to resolve the issue of the release page displaying incorrectly?
+## Case Study 1: How to enable SSH access for an AlmaLinux 9 devcontainer?
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
+
+**Answer Excerpt:**  
+@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 2: How to resolve the issue of the release page displaying incorrectly?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
@@ -23,7 +40,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: Cant Access settings
+## Case Study 3: Cant Access settings
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179083)  
@@ -40,7 +57,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 3: Flutter Project Build Issue
+## Case Study 4: Flutter Project Build Issue
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176745)  
@@ -57,7 +74,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 4: About git.hubp.de
+## Case Study 5: About git.hubp.de
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175897)  
@@ -74,7 +91,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 5: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
+## Case Study 6: “GitHub Pages 404 for .well-known/stellar.toml even though file is in main branch”
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179851)  
@@ -91,7 +108,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 6: Is there a way to ignore "[skip ci]" for tag pushes?
+## Case Study 7: Is there a way to ignore "[skip ci]" for tag pushes?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179637)  
@@ -108,7 +125,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 7: Out of space error while pulling docker layers since yesterday
+## Case Study 8: Out of space error while pulling docker layers since yesterday
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179725)  
@@ -125,7 +142,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 8: Redirect to a App Connection on my profile, side menu accessility indication
+## Case Study 9: Redirect to a App Connection on my profile, side menu accessility indication
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179602)  
@@ -142,7 +159,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 9: Searching organization repositories based on Custom Property using GitHub App installation token
+## Case Study 10: Searching organization repositories based on Custom Property using GitHub App installation token
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179512)  
@@ -159,7 +176,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 10: Can a user set MCP registry url in VS Code
+## Case Study 11: Can a user set MCP registry url in VS Code
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179377)  
@@ -176,7 +193,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 11: Break glass accounts for Enterprise vs Organization
+## Case Study 12: Break glass accounts for Enterprise vs Organization
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179445)  
@@ -193,7 +210,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 12: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
+## Case Study 13: How to properly handle user reconnection and stream re-subscription in Agora Web RTC?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179481)  
@@ -210,7 +227,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 13: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
+## Case Study 14: How can I update a 3rd party when all the required checks for a PR pass, or one of them fails?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179376)  
@@ -227,7 +244,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 14: It seems that there is an image upload limit for a single conversation in copilot
+## Case Study 15: It seems that there is an image upload limit for a single conversation in copilot
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179404)  
@@ -244,7 +261,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 15: How to organize multiple projects within an Organization on GitHub?
+## Case Study 16: How to organize multiple projects within an Organization on GitHub?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179050)  
@@ -261,7 +278,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 16: How to conditionally run steps in a workflow based on the value of an environment variable set
+## Case Study 17: How to conditionally run steps in a workflow based on the value of an environment variable set
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179271)  
@@ -278,7 +295,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 17: Releases is duplicated
+## Case Study 18: Releases is duplicated
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179273)  
@@ -295,7 +312,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 18: Best practices for migrating from SVN to GitHub
+## Case Study 19: Best practices for migrating from SVN to GitHub
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179231)  
@@ -312,7 +329,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 19: How to use 2FA without signing up for an online account?
+## Case Study 20: How to use 2FA without signing up for an online account?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179118)  
@@ -329,7 +346,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 20: Can an input parameter be used for an automatic deployment?
+## Case Study 21: Can an input parameter be used for an automatic deployment?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179119)  
@@ -346,7 +363,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 21: project idea question_mind map file manager
+## Case Study 22: project idea question_mind map file manager
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178721)  
@@ -363,7 +380,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 22: Copilot issues
+## Case Study 23: Copilot issues
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178850)  
@@ -380,7 +397,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 23: core.debug fails silently
+## Case Study 24: core.debug fails silently
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178475)  
@@ -397,7 +414,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 24: Please simplify generation of granular tokens
+## Case Study 25: Please simplify generation of granular tokens
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/178653)  
@@ -414,7 +431,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 25: How to find my history of forked repo
+## Case Study 26: How to find my history of forked repo
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177599)  
@@ -431,7 +448,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 26: Hosting
+## Case Study 27: Hosting
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177265)  
@@ -448,7 +465,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 27: NextJS, failed to fetch ' Open Sans' from Google Fonts on build
+## Case Study 28: NextJS, failed to fetch ' Open Sans' from Google Fonts on build
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177046)  
@@ -465,7 +482,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 28: Workflow matrix with extra data
+## Case Study 29: Workflow matrix with extra data
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177251)  
@@ -482,7 +499,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 29: Pages from Private repo if student status expires?
+## Case Study 30: Pages from Private repo if student status expires?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177270)  
@@ -499,7 +516,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 30: Architectural Discussion: Best way to cap file upload sizes in Go to prevent OOM/DoS?
+## Case Study 31: Architectural Discussion: Best way to cap file upload sizes in Go to prevent OOM/DoS?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177001)  
@@ -516,7 +533,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 31: Prevent actions on forks
+## Case Study 32: Prevent actions on forks
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176925)  
@@ -533,7 +550,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 32: What it means that a AI model is in a preview?
+## Case Study 33: What it means that a AI model is in a preview?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/177077)  
@@ -550,7 +567,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 33: I am having a very hard time understanding things. Someone please point me in the right direction.
+## Case Study 34: I am having a very hard time understanding things. Someone please point me in the right direction.
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175680)  
@@ -567,7 +584,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 34: Not Able to Get in my HacktoberFest Account
+## Case Study 35: Not Able to Get in my HacktoberFest Account
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176827)  
@@ -584,7 +601,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 35: TLS certificate is being provisioned. This may take up to 15 minutes to complete.
+## Case Study 36: TLS certificate is being provisioned. This may take up to 15 minutes to complete.
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/176744)  
@@ -601,7 +618,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 36: Paymeny declined
+## Case Study 37: Paymeny declined
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175858)  
@@ -618,7 +635,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 37: Fork Missing in Tree View of Fork Insights Tab
+## Case Study 38: Fork Missing in Tree View of Fork Insights Tab
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175749)  
@@ -635,7 +652,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 38: AGENTS.md is not considering by default when I start a new chat
+## Case Study 39: AGENTS.md is not considering by default when I start a new chat
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175649)  
@@ -652,7 +669,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 39: Can’t figure out why my API won’t accept orders
+## Case Study 40: Can’t figure out why my API won’t accept orders
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175554)  
@@ -669,7 +686,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 40: Why does search not find this repo?
+## Case Study 41: Why does search not find this repo?
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175430)  
@@ -686,7 +703,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 41: Signing macos apps in a GitHub action for test runs only
+## Case Study 42: Signing macos apps in a GitHub action for test runs only
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175498)  
@@ -703,7 +720,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 42: quota management is obscure to me
+## Case Study 43: quota management is obscure to me
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175265)  
@@ -720,7 +737,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 43: Dependency graph
+## Case Study 44: Dependency graph
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175401)  
@@ -728,23 +745,6 @@ Environment assumptions, scripts, or datasets needed.
 
 **Answer Excerpt:**  
 The dependency graph in GitHub Insights only shows **direct dependents**. That means it lists the repositories that declare your package as a dependency in their manifest. It does not expand that out to every indirect consumer further down the chain.  You can validate this by looking at a package you know is widely used. In its dependency graph you’ll see only the projects that explicitly referenc...
-
-**Validation:**  
-Steps to confirm this solution works.
-
-**Reproducibility Notes:**  
-Environment assumptions, scripts, or datasets needed.
-
----
-
-## Case Study 44: How to enable SSH access for an AlmaLinux 9 devcontainer?
-**Repository:** community/community
-
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
-
-**Answer Excerpt:**  
-@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
 
 **Validation:**  
 Steps to confirm this solution works.
