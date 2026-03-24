@@ -6,14 +6,14 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: How to enable SSH access for an AlmaLinux 9 devcontainer?
+## Case Study 1: How to resolve the issue of the release page displaying incorrectly?
 **Repository:** community/community
 
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
 
 **Answer Excerpt:**  
-@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
+That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
 
 **Validation:**  
 Steps to confirm this solution works.
@@ -23,14 +23,14 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: How to resolve the issue of the release page displaying incorrectly?
+## Case Study 2: How to enable SSH access for an AlmaLinux 9 devcontainer?
 **Repository:** community/community
 
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
 
 **Answer Excerpt:**  
-That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
+@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
 
 **Validation:**  
 Steps to confirm this solution works.
