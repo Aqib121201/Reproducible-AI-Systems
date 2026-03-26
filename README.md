@@ -6,14 +6,14 @@ This aligns with EU Open Science standards of transparency and validation.
 
 ---
 
-## Case Study 1: How to resolve the issue of the release page displaying incorrectly?
+## Case Study 1: How to enable SSH access for an AlmaLinux 9 devcontainer?
 **Repository:** community/community
 
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
 
 **Answer Excerpt:**  
-That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
+@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
 
 **Validation:**  
 Steps to confirm this solution works.
@@ -23,14 +23,14 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 2: How to enable SSH access for an AlmaLinux 9 devcontainer?
+## Case Study 2: How to resolve the issue of the release page displaying incorrectly?
 **Repository:** community/community
 
-**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/175344)  
-**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/175344#discussioncomment-14570155)
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/179838)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/179838#discussioncomment-14997342)
 
 **Answer Excerpt:**  
-@esthezia The next step is to stop trying to reach SSH over the app.github.dev URL. Those forwarded URLs only proxy HTTP. Raw SSH there will time out even if sshd is healthy. Keep sshd in your devcontainer and use the GitHub CLI tunnel for SSH and file copy. Your scp failure is because OpenSSH now defaults to SFTP and your container does not expose the SFTP subsystem. Add it and create the sshd ru...
+That’s a GitHub UI bug on their side, not something you can fix. To get the right team, open a support ticket under Repositories Click Releases and include your repo link and screenshots of the empty view vs ?page=2. That sends it to the correct engineering team instead of billing....
 
 **Validation:**  
 Steps to confirm this solution works.
@@ -822,7 +822,24 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 49: manual workflow in features brach
+## Case Study 49: 非本人操作，我的仓库莫名其妙突然出现了test-action-1758516670662814635
+**Repository:** community/community
+
+**Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174911)  
+**Accepted Answer:** [Direct link](https://github.com/community/community/discussions/174911#discussioncomment-14527021)
+
+**Answer Excerpt:**  
+看起来是有人用你的账户凭据或授权的应用在你名下创建了仓库 默认的 GITHUB_TOKEN 只能在当前仓库内操作 创建新仓库通常需要你的登录状态 个人访问令牌 或安装的 GitHub App 的权限 所以最可能是令牌或应用被滥用 先做账号安全处置 开启双重验证或添加通行密钥 立刻更改密码并在所有设备退出登录 撤销所有活跃会话和已记住的设备 检查凭据与集成 在开发者设置里撤销并重新生成所有个人访问令牌 删除不认识的 SSH 和 GPG 密钥 查看已授权的 OAuth 应用和已安装的 GitHub Apps 移除任何不需要或来源不明的项 轮换组织和仓库里的所有 Secrets 查看证据与清理 打开安全日志和审计日志并按时间筛出 Create repository 和 Actions 相关事件 核对是哪个令牌或应用发起 在触发异常的仓库里检查最近的工作流定义和第三方 actions 把 Acti...
+
+**Validation:**  
+Steps to confirm this solution works.
+
+**Reproducibility Notes:**  
+Environment assumptions, scripts, or datasets needed.
+
+---
+
+## Case Study 50: manual workflow in features brach
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174939)  
@@ -839,7 +856,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 50: Date and time format
+## Case Study 51: Date and time format
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174591)  
@@ -856,7 +873,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 51: GitHub Copilot Usage Externally
+## Case Study 52: GitHub Copilot Usage Externally
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174484)  
@@ -873,7 +890,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 52: Github Action on PR merged and Environment question
+## Case Study 53: Github Action on PR merged and Environment question
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174474)  
@@ -890,7 +907,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 53: Agentes de IA com Python
+## Case Study 54: Agentes de IA com Python
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174123)  
@@ -907,7 +924,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 54: Can't set different model per mode
+## Case Study 55: Can't set different model per mode
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174282)  
@@ -924,7 +941,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 55: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
+## Case Study 56: if: ${{ github.event_name == 'workflow_call' }} not working in reuseable workflow
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/174203)  
@@ -941,7 +958,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 56: not receiving PR review requested notifications and cant find location to enable it
+## Case Study 57: not receiving PR review requested notifications and cant find location to enable it
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173820)  
@@ -958,7 +975,7 @@ Environment assumptions, scripts, or datasets needed.
 
 ---
 
-## Case Study 57: Audit logs for certain actions show Unknown IP address
+## Case Study 58: Audit logs for certain actions show Unknown IP address
 **Repository:** community/community
 
 **Original Discussion:** [View discussion](https://github.com/orgs/community/discussions/173723)  
@@ -976,4 +993,4 @@ Environment assumptions, scripts, or datasets needed.
 ---
 
 
-_Total curated accepted answers: 57_
+_Total curated accepted answers: 58_
